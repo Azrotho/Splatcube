@@ -1,0 +1,9 @@
+main: fr.azrotho.splatcube.Splatcube
+version: 1.0
+api-version: 1.19
+name: Splatcube
+author: Azrotho
+commands:
+  debug:
+    usage: /debug help
+    description: Debug command
