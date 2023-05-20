@@ -4,7 +4,7 @@ Splatcube est un plugin Minecraft qui est une adaptation de Splatoon dans Minecr
 
 ## Installation
 
-Pour installer le plugin, il faut le mettre dans le dossier plugins de votre serveur Minecraft
+Pour installer le plugin, il faut le mettre dans le dossier plugins de votre serveur Minecraft ainsi que NickAPI *(Disponible dans les libs)*
 
 ## Usage
 
