@@ -8,6 +8,7 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.inventory.InventoryClickEvent;
+import xyz.haoshoku.nick.api.NickAPI;
 
 public class OnMenuInteraction implements Listener {
     @EventHandler
@@ -20,12 +21,16 @@ public class OnMenuInteraction implements Listener {
                 event.getWhoClicked().sendMessage("§9Vous avez rejoint l'équipe bleue !");
                 SplatPlayer spPlayer = SplatPlayer.getSplatPlayer((Player) event.getWhoClicked());
                 spPlayer.setTeam("blue");
+                NickAPI.nick((Player) event.getWhoClicked(), "§9" + event.getWhoClicked().getName());
+                NickAPI.refreshPlayer((Player) event.getWhoClicked());
                 event.getWhoClicked().closeInventory();
             }
             if(event.getCurrentItem().getItemMeta().getDisplayName().equals("§6Equipe orange")) {
                 event.getWhoClicked().sendMessage("§6Vous avez rejoint l'équipe orange !");
                 SplatPlayer spPlayer = SplatPlayer.getSplatPlayer((Player) event.getWhoClicked());
                 spPlayer.setTeam("orange");
+                NickAPI.nick((Player) event.getWhoClicked(), "§6" + event.getWhoClicked().getName());
+                NickAPI.refreshPlayer((Player) event.getWhoClicked());
                 event.getWhoClicked().closeInventory();
             }
         }

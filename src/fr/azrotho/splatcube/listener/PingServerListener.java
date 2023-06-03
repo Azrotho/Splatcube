@@ -8,7 +8,7 @@ import org.bukkit.event.server.ServerListPingEvent;
 public class PingServerListener implements Listener {
     @EventHandler
     public static void onPing(ServerListPingEvent event) {
-        event.setMaxPlayers(8);
+        event.setMaxPlayers(16);
         if(Splatcube.isStarted) {
             event.setMotd("En cours");
         } else {
