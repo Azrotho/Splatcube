@@ -41,11 +41,9 @@ public class StarterRunnable extends BukkitRunnable {
             }
 
             StartGameFunctions.start();
-            this.cancel();
-            return;
         }
 
-        if(Bukkit.getOnlinePlayers().size() < 2) {
+        if(Bukkit.getOnlinePlayers().size() < 34) {
             for(Player p : Bukkit.getOnlinePlayers()) {
                 p.spigot().sendMessage(ChatMessageType.ACTION_BAR, net.md_5.bungee.api.chat.TextComponent.fromLegacyText("§cIl n'y a pas assez de joueurs pour commencer la partie !"));
             }

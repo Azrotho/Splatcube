@@ -22,6 +22,7 @@ public class OnPlayerRespawn implements Listener {
             event.setRespawnLocation(spMap.getOrangeSpawn());
         }
         player.getInventory().clear();
+        spPlayer.setInk(100);
         player.getInventory().addItem(ManageWeapon.getWeaponItem(spPlayer.getWeapon()));
     }
 }

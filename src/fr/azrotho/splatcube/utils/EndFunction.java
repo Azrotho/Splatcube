@@ -24,7 +24,7 @@ public class EndFunction extends BukkitRunnable {
             p.setGameMode(GameMode.SPECTATOR);
             SplatMaps splatMaps = SplatMaps.getMap(Splatcube.map);
             p.teleport(splatMaps.getSpawn().setDirection(new Vector(0,-1,0)));
-            p.sendTitle("§6Fin de la partie", "§6Comptage des blocs...", 20, 60, 20);
+            p.sendTitle("§6Fin de la partie", "§6Comptage des blocs...", 20, 300, 20);
         }
         HashMap<String, Integer> blocks = countBlocks();
         int percentBlue = (int) ((blocks.get("blue") * 100) / (blocks.get("blue") + blocks.get("orange")));

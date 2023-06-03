@@ -10,10 +10,10 @@ import org.bukkit.inventory.meta.ItemMeta;
 public class ManageWeapon {
     public static void createWeapon() {
         String displayNameRouleau = IridiumColorAPI.process("<GRADIENT:002BFF>§lRouleau</GRADIENT:FF6F00>");
-        SplatWeapon rouleau = new SplatWeapon("rouleau", displayNameRouleau, 10, 5, 4, 3, 1, 1);
+        SplatWeapon rouleau = new SplatWeapon("rouleau", displayNameRouleau, 5, 5, 4, 3, 1, 1);
 
         String displayNameConcentrateur = IridiumColorAPI.process("<GRADIENT:002BFF>§lConcentrateur</GRADIENT:FF6F00>");
-        SplatWeapon concentrateur = new SplatWeapon("concentrateur", displayNameConcentrateur, 25, 8, 5, 4, 10, 2);
+        SplatWeapon concentrateur = new SplatWeapon("concentrateur", displayNameConcentrateur, 25, 8, 3, 2, 10, 2);
 
         String displayNameBadigeonneur = IridiumColorAPI.process("<GRADIENT:002BFF>§lBadigeonneur</GRADIENT:FF6F00>");
         SplatWeapon badigeonneur = new SplatWeapon("badigeonneur", displayNameBadigeonneur, 15, 5, 4, 3, 5, 3);
