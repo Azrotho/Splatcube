@@ -18,4 +18,8 @@ Pour utiliser le plugin, il faut faire la commande /debug help
 ## Pack de ressource
 
 *Le pack de ressource arrive...*
- 
+
+ ## Vidéo:
+
+
+https://youtu.be/uXjt9xoDwWI
